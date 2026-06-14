@@ -7,35 +7,35 @@ from pyrogram import filters
 load_dotenv()
 
 
-API_ID = int(getenv("API_ID", 35852042)) 
-API_HASH = getenv("API_HASH", None)
+API_ID = int(getenv("API_ID", 35852042)) # ⚠️ fill here or in .env
+API_HASH = getenv("API_HASH", "") # ⚠️ fill here or in .env
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-BOT_USERNAME = ("BOT_USERNAME", None) 
+BOT_TOKEN = getenv("BOT_TOKEN", "") # ⚠️ fill here or in .env
+BOT_USERNAME = ("BOT_USERNAME", "") # ⚠️ fill here or in .env
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "") # ⚠️ fill here or in .env
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 19000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002094142057))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002094142057)) # ⚠️ fill here or in .env and ensure that bot and assistant bot are admin in log group 
 
 
-OWNER_ID = int(getenv("OWNER_ID", 1841914911))
+OWNER_ID = int(getenv("OWNER_ID", 1841914911)) # ⚠️ fill here or in .env
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None) # ⚠️ fill here or in .env if deploying on heroku
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", None) # ⚠️ fill here or in .env if deploying on heroku
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/mrxbroken011/BROKEN-X-MUSIC.git")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Brokenxnetwork1")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+GdYztKC7jPk1N2Y1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Brokenxnetwork1") # ⚠️ fill Your channel link here
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+GdYztKC7jPk1N2Y1") # ⚠️ fill Chat group link here
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -57,7 +57,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", None) # ⚠️ fill in .env
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -78,33 +78,34 @@ AYU = [
 ]
 
 
+# ⚠️ change images urls if you want to change 
 
 START_IMG_URL = [
-     "https://files.catbox.moe/dkmm7b.jpeg", 
-     "https://files.catbox.moe/ja6mf5.jpeg", 
-     "https://files.catbox.moe/2tmu0j.jpeg", 
-     "https://files.catbox.moe/e5mxx2.jpeg", 
-     "https://files.catbox.moe/7c6qzc.jpeg", 
-     "https://files.catbox.moe/4x1m0u.jpeg", 
-     "https://files.catbox.moe/7juopm.jpeg", 
-     "https://files.catbox.moe/0crhh2.jpeg", 
-     "https://files.catbox.moe/b1da6m.jpg", 
-     "https://files.catbox.moe/hsv9el.jpg", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
+     "https://files.catbox.moe/sbqogq.png", 
 ]
 
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/dkmm7b.jpeg"
+    "PING_IMG_URL", "https://files.catbox.moe/sbqogq.png"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/0ffb4a004185a3991ce18.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/sbqogq.png"
+STATS_IMG_URL = "https://files.catbox.moe/sbqogq.png"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/sbqogq.png"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/sbqogq.png"
+STREAM_IMG_URL = "https://files.catbox.moe/sbqogq.png"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/sbqogq.png"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/sbqogq.png"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/sbqogq.png"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/sbqogq.png"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/sbqogq.png"
 
 
 def time_to_seconds(time):
