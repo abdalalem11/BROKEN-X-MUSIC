@@ -76,20 +76,30 @@ Failure to follow these practices can lead to:
 
 Set the following variables in your `.env` file or cloud dashboard:
 
-```
-API_ID=your_api_id
-API_HASH=your_api_hash
-BOT_TOKEN=your_bot_token
-OWNER_ID=your_telegram_id
-LOGGER_ID=your_log_group_id
-MONGO_DB_URI=your_mongodb_uri
-STRING_SESSION=your_session_string
+```console
 
-YTAPIURL=https://mrbroken-brokenxbots.hf.space
-YTKEY=your_custom_api_key
+
+API_ID=                  # Get from https://my.telegram.org → API Development Tools
+API_HASH=                # Get from https://my.telegram.org → API Development Tools
+
+BOT_TOKEN=               # Create a bot via @BotFather → /newbot → Copy the bot token
+
+LOGGER_ID=               # Telegram Group where logs will be sent.
+# Add @Miss_YumiPro_Bot (or any ID bot) and use /id in the group/channel.
+
+MONGO_DB_URI=            # Create a free cluster on https://www.mongodb.com/cloud/atlas
+# Database → Connect → Drivers → Copy the MongoDB connection URI.
+
+OWNER_ID=                # Your Telegram User ID.
+# DM @Miss_YumiPro_Bot and send /id.
+
+STRING_SESSION=          # Generate your Pyrogram V2 String Session using a trusted session generator.
+
+SHRUTI_API_KEY=          # Obtain from Telegram bot @SHRUTIAPIBOT.
+ 
 ```
 
-> Note: GET Your YTKEY For Free From [HERE](https://t.me/aboutbrokenx) Join For More Updates
+> Note: GET Your `SHRUTI_API_KEY` For Free From [HERE](https://t.me/SHRUTIAPIBOT) 
 
 ---
 
