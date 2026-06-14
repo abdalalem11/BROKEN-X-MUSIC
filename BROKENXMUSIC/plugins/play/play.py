@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 from BROKENXMUSIC.utils.database import get_assistant
 import config
 from BROKENXMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from BROKENXMUSIC.core.call import Broken as JARVIS
+from BROKENXMUSIC.core.call import JARVIS
 from BROKENXMUSIC.utils import seconds_to_min, time_to_seconds
 from BROKENXMUSIC.utils.channelplay import get_channeplayCB
 from BROKENXMUSIC.utils.decorators.language import languageCB
@@ -106,7 +106,7 @@ async def play_commnd(
             except Exception as e:
                 # DEBUG MODE: ERROR PRINT ON CHAT
                 err_msg = traceback.format_exc()
-                await mystic.edit_text(f"❌ **Error in TG Audio Stream:**\n\n`{err_msg}`")
+                await mystic.edit_text(f"❌ **Error in TG Audio Stream**\n ")
                 return 
             return await mystic.delete()
         return
@@ -150,8 +150,8 @@ async def play_commnd(
                 )
             except Exception as e:
                 # DEBUG MODE: ERROR PRINT ON CHAT
-                err_msg = traceback.format_exc()
-                await mystic.edit_text(f"❌ **Error in TG Video Stream:**\n\n`{err_msg}`")
+                # err_msg = traceback.format_exc()
+                await mystic.edit_text(f"❌ **Error in TG Video Stream:**\n\n`Response Timeout`")
                 return
             return await mystic.delete()
         return
@@ -302,8 +302,8 @@ async def play_commnd(
                 )
             except Exception as e:
                 # DEBUG MODE: ERROR PRINT ON CHAT
-                err_msg = traceback.format_exc()
-                await mystic.edit_text(f"❌ **Error in Soundcloud Stream:**\n\n`{err_msg}`")
+               # err_msg = traceback.format_exc()
+                await mystic.edit_text(f"❌ **Error in Soundcloud Stream:**\n\n`Try Again After Sometime`")
                 return
             return await mystic.delete()
         else:
@@ -333,8 +333,8 @@ async def play_commnd(
                 )
             except Exception as e:
                 # DEBUG MODE: ERROR PRINT ON CHAT
-                err_msg = traceback.format_exc()
-                await mystic.edit_text(f"❌ **Error in Index Stream:**\n\n`{err_msg}`")
+                #err_msg = traceback.format_exc()
+                await mystic.edit_text(f"❌ **Error in Index Stream:**\n\nTry again, after sometime")
                 return
             return await play_logs(message, streamtype="M3u8 or Index Link")
     else:
@@ -394,8 +394,8 @@ async def play_commnd(
             )
         except Exception as e:
             # DEBUG MODE: ERROR PRINT ON CHAT
-            err_msg = traceback.format_exc()
-            await mystic.edit_text(f"❌ **Error in Direct Stream:**\n\n`{err_msg}`")
+            exx = traceback.format_exc()
+            await mystic.edit_text(f"❌ **Error in Direct Stream:**\n\nServer Connection Timeout\n")
             return
         await mystic.delete()
         return await play_logs(message, streamtype=streamtype)
@@ -527,6 +527,6 @@ async def play_music(client, CallbackQuery, _):
     except Exception as e:
         # DEBUG MODE: ERROR PRINT ON CHAT
         err_msg = traceback.format_exc()
-        await mystic.edit_text(f"❌ **Error in Callback Stream:**\n\n`{err_msg}`")
+        await mystic.edit_text(f"❌ **Error in Callback Stream:**\n\nHaving Server Issue, Try again after some time")
         return
     return await mystic.delete()
