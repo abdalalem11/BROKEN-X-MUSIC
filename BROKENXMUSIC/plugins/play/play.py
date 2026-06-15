@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 from BROKENXMUSIC.utils.database import get_assistant
 import config
 from BROKENXMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from BROKENXMUSIC.core.call import JARVIS
+from BROKENXMUSIC.core.call import BROKEN as JARVIS
 from BROKENXMUSIC.utils import seconds_to_min, time_to_seconds
 from BROKENXMUSIC.utils.channelplay import get_channeplayCB
 from BROKENXMUSIC.utils.decorators.language import languageCB
