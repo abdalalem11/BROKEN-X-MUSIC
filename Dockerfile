@@ -17,4 +17,8 @@ COPY . /app/
 RUN pip install --no-cache-dir -U pip \
     && pip install --no-cache-dir -r requirements.txt
 
+#if deploying as web services on Render or any other web service 
 CMD bash start.sh
+
+#if deploying with vps or heroku 
+#CMD bash start
