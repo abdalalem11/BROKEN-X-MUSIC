@@ -6,6 +6,14 @@
   </a>
 </div>
 
+<h3 align="middle"><b>HOW TO DEPLOY FREE ON RENDER</b></h3>
+
+<div align="center">
+<a href="https://youtu.be/ag0olwH4fgE">
+  <img src="https://github.com/mrxbroken011/mrxbroken011/resources/youtube_icon.png" alt="How To Deploy"/>
+</a>
+</div>
+
 
 <h2 align="center"> 𝗦𝗔𝗬 𝗡𝗢 𝗧𝗢 𝗧𝗛𝗜𝗦 𝗘𝗥𝗥𝗢𝗥... 👇🏻</h2>
 
