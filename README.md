@@ -117,11 +117,11 @@ OWNER_ID=                # Your Telegram User ID.
 
 STRING_SESSION=          # Generate your Pyrogram V2 String Session using a trusted session generator.
 
-API_KEY=          # Obtain from Telegram Channels @BrokenXNetwork1 or @AboutBrokenX
+SHRUTI_API_KEY=          # Obtain from Telegram bot   @SHRUTIAPIBOT and join for updates @BrokenXNetwork1 or @AboutBrokenX
  
 ```
 
-> Note: GET Your `API_KEY` For Free From [HERE](https://t.me/brokenxnetwork1/69) 
+> Note: GET Your `API_KEY` For Free From [HERE](https://t.me/SHRUTIAPIBOT) 
 
 ---
 
